@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "静一静",
+  "version": "1.0.0",
+  "description": "把 B站 首页的推荐流藏起来，只留顶部导航和搜索框。",
+  "host_permissions": [
+    "https://www.bilibili.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.bilibili.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "静一静",
+    "default_popup": "popup.html"
+  }
+}

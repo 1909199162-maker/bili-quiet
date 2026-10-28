@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- popup.html —— 点插件图标弹出来的小窗口（宽 280px） -->
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <style>
+    :root {
+      --ink: #1d1d1f;
+      --muted: #6e6e73;
+      --accent: #0071e3;
+      --line: #e8e8ed;
+    }
+    * { box-sizing: border-box; }
+    body {
+      width: 280px;
+      margin: 0;
+      padding: 18px 18px 14px;
+      font-family: -apple-system, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      color: var(--ink);
+      background: #fff;
+    }
+    .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--accent);
+      display: inline-block;
+      margin-right: 7px;
+      vertical-align: 2px;
+    }
+    h1 {
+      font-size: 15px;
+      margin: 0 0 6px;
+      letter-spacing: .01em;
+    }
+    p {
+      font-size: 12.5px;
+      line-height: 1.55;
+      color: var(--muted);
+      margin: 0;
+    }
+    .status {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+      font-size: 12px;
+      color: var(--ink);
+    }
+    .ver {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #a1a1a6;
+    }
+  </style>
+</head>
+<body>
+  <h1><span class="dot"></span>静一静</h1>
+  <p>B站首页的推荐流已关闭。<br />想找东西，用页面顶上的搜索框。</p>
+  <div class="status">状态：<strong>已静音</strong></div>
+  <div class="ver">v1.0.0</div>
+</body>
+</html>
